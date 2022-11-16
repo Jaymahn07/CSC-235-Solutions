@@ -1,6 +1,7 @@
 // JOSHUA AYOMIDE PEREIRA//
 //222511
 
+
 #include <stdio.h>
 #include<string.h>
 #include <stdlib.h>
@@ -22,9 +23,9 @@ int main(){
         printf("File cannot be Found or Error in Opening File");
         exit(1);
     }
-
     fscanf(input, "%d", &testcase_no);
     // Reads the first line of the file which contains the number of testcases //
+
     printf("The number of textcases is %d\n ", testcase_no);
     for(i= 0; i< testcase_no; i++ ){
       // looping through the number of testcases from the file//
@@ -40,14 +41,15 @@ int main(){
         while(j<len){
 
          // looping through each character in the file //
-            if ((text[j] == 'U' || text[j] == 'u')){
+            if(text[j] == 'U' || text[j] == 'u'){
                
                 increment++;
+            // a conditional statement where there is a U in a string  it must be incremented by 1 //
             }
                 
-        // a conditional statement where there is a U in a string  it must be incremented by 1 //
+        
                 
-            else if(text[j] == 'D' || text[j == 'd']){
+            else if(text[j] == 'D' || text[j] == 'd'){
            
                 break;
             }
